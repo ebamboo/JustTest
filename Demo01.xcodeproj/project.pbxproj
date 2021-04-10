@@ -8,22 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		EAEBAD4A2621B176005DE62B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEBAD492621B176005DE62B /* AppDelegate.swift */; };
-		EAEBAD4C2621B176005DE62B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEBAD4B2621B176005DE62B /* SceneDelegate.swift */; };
-		EAEBAD4E2621B176005DE62B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEBAD4D2621B176005DE62B /* ViewController.swift */; };
-		EAEBAD512621B176005DE62B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAEBAD4F2621B176005DE62B /* Main.storyboard */; };
 		EAEBAD532621B178005DE62B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAEBAD522621B178005DE62B /* Assets.xcassets */; };
 		EAEBAD562621B178005DE62B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAEBAD542621B178005DE62B /* LaunchScreen.storyboard */; };
+		EAEBAD622621B3A7005DE62B /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEBAD612621B3A7005DE62B /* RootTabBarController.swift */; };
+		EAEBAD662621B3E6005DE62B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEBAD642621B3E6005DE62B /* HomeViewController.swift */; };
+		EAEBAD672621B3E6005DE62B /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAEBAD652621B3E6005DE62B /* HomeViewController.xib */; };
+		EAEBAD6B2621B3F0005DE62B /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEBAD692621B3F0005DE62B /* MineViewController.swift */; };
+		EAEBAD6C2621B3F0005DE62B /* MineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAEBAD6A2621B3F0005DE62B /* MineViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EAEBAD462621B176005DE62B /* Demo01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo01.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAEBAD492621B176005DE62B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EAEBAD4B2621B176005DE62B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EAEBAD4D2621B176005DE62B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EAEBAD502621B176005DE62B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EAEBAD522621B178005DE62B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EAEBAD552621B178005DE62B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EAEBAD572621B178005DE62B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAEBAD612621B3A7005DE62B /* RootTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarController.swift; sourceTree = "<group>"; };
+		EAEBAD642621B3E6005DE62B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		EAEBAD652621B3E6005DE62B /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		EAEBAD692621B3F0005DE62B /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
+		EAEBAD6A2621B3F0005DE62B /* MineViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MineViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,12 +61,14 @@
 			isa = PBXGroup;
 			children = (
 				EAEBAD492621B176005DE62B /* AppDelegate.swift */,
-				EAEBAD4B2621B176005DE62B /* SceneDelegate.swift */,
-				EAEBAD4D2621B176005DE62B /* ViewController.swift */,
-				EAEBAD4F2621B176005DE62B /* Main.storyboard */,
 				EAEBAD522621B178005DE62B /* Assets.xcassets */,
 				EAEBAD542621B178005DE62B /* LaunchScreen.storyboard */,
 				EAEBAD572621B178005DE62B /* Info.plist */,
+				EAEBAD612621B3A7005DE62B /* RootTabBarController.swift */,
+				EAEBAD642621B3E6005DE62B /* HomeViewController.swift */,
+				EAEBAD652621B3E6005DE62B /* HomeViewController.xib */,
+				EAEBAD692621B3F0005DE62B /* MineViewController.swift */,
+				EAEBAD6A2621B3F0005DE62B /* MineViewController.xib */,
 			);
 			path = Demo01;
 			sourceTree = "<group>";
@@ -126,7 +132,8 @@
 			files = (
 				EAEBAD562621B178005DE62B /* LaunchScreen.storyboard in Resources */,
 				EAEBAD532621B178005DE62B /* Assets.xcassets in Resources */,
-				EAEBAD512621B176005DE62B /* Main.storyboard in Resources */,
+				EAEBAD672621B3E6005DE62B /* HomeViewController.xib in Resources */,
+				EAEBAD6C2621B3F0005DE62B /* MineViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,23 +144,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EAEBAD4E2621B176005DE62B /* ViewController.swift in Sources */,
 				EAEBAD4A2621B176005DE62B /* AppDelegate.swift in Sources */,
-				EAEBAD4C2621B176005DE62B /* SceneDelegate.swift in Sources */,
+				EAEBAD622621B3A7005DE62B /* RootTabBarController.swift in Sources */,
+				EAEBAD662621B3E6005DE62B /* HomeViewController.swift in Sources */,
+				EAEBAD6B2621B3F0005DE62B /* MineViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		EAEBAD4F2621B176005DE62B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EAEBAD502621B176005DE62B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EAEBAD542621B178005DE62B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
