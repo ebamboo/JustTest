@@ -24,13 +24,14 @@ class RootTabBarController: UITabBarController {
         /// 设置 navigationBar
         /// translucent: 导航栏是否透明; barTintColor: 导航栏颜色（背景）; tintColor: 导航栏痕迹颜色
         /// 注意：痕迹颜色会作用在系统自带的 barButtonItem 上，如字体颜色，图片颜色（可通过设置 render 为 UIImageRenderingModeAlwaysOriginal 避免痕迹颜色的影响）。不会作用在标题上
+        /// 一般通过修改 backgroundImage 来改变 navigationBar/tabBar 颜色。
         UINavigationBar.appearance().isTranslucent = true
-        UINavigationBar.appearance().barTintColor = UIColor.init(red: 0.3, green: 0.9, blue: 0.6, alpha: 1.0)
+//        UINavigationBar.appearance().barTintColor = UIColor.init(red: 0.3, green: 0.9, blue: 0.6, alpha: 1.0)
         UINavigationBar.appearance().tintColor = UIColor.orange
         
         /// 设置导航栏标题
         UINavigationBar.appearance().titleTextAttributes = [
-            NSAttributedString.Key.foregroundColor: UIColor.white,
+            NSAttributedString.Key.foregroundColor: UIColor.systemPink,
             NSAttributedString.Key.font: UIFont.systemFont(ofSize: 18, weight: UIFont.Weight.medium)
         ]
         
