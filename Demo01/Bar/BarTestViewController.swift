@@ -15,8 +15,11 @@ class BarTestViewController: UIViewController {
     /// 该方法弊端很大，慎重使用
     /// 可以通过 self.navigationController?.navigationBar.isHidden = true 这个途径达到隐藏导航栏目的
     /// 但是状态栏的设置无效
+    /// 总结：无导航栏时，可以自由设置状态栏是否隐藏、样式
+    /// 有导航栏时，通过 self.navigationController?.navigationBar.barStyle = .default 达到设置状态栏样式目的
     
 //    override var prefersStatusBarHidden: Bool {
+//        /// 一般只在引导页，启动页使用
 //        return true
 //    }
     
