@@ -70,7 +70,7 @@ class FileOpeningViewController: UIViewController, UIDocumentInteractionControll
         /// Presents a menu allowing the user to open the document in another application.
         /// The menu will contain all applications that can open the item at URL
         /// Returns NO if there are no applications that can open the item at URL.
-     
+        ///
         documentVC?.presentOptionsMenu(from: fileBtn.bounds, in: fileBtn, animated: true)
     }
     
