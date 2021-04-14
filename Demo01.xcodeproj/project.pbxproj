@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		DC2412CA262690BC00F42143 /* SystemShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2412C9262690BC00F42143 /* SystemShareViewController.swift */; };
+		DC2412D12626B6AD00F42143 /* FileOpeningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2412D02626B6AD00F42143 /* FileOpeningViewController.swift */; };
+		DC2412D52626B97300F42143 /* pretty.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DC2412D32626B97300F42143 /* pretty.jpg */; };
+		DC2412D62626B97300F42143 /* 荷塘月色.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DC2412D42626B97300F42143 /* 荷塘月色.pdf */; };
 		DC2AE35E26241E14005C8CC7 /* BarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2AE35C26241E14005C8CC7 /* BarViewController.swift */; };
 		EA031C0126248BAD00180969 /* BarTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA031C0026248BAD00180969 /* BarTestViewController.swift */; };
 		EA031C052625CACD00180969 /* ScrollViewHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA031C042625CACD00180969 /* ScrollViewHeaderViewController.swift */; };
@@ -23,6 +26,9 @@
 
 /* Begin PBXFileReference section */
 		DC2412C9262690BC00F42143 /* SystemShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemShareViewController.swift; sourceTree = "<group>"; };
+		DC2412D02626B6AD00F42143 /* FileOpeningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileOpeningViewController.swift; sourceTree = "<group>"; };
+		DC2412D32626B97300F42143 /* pretty.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pretty.jpg; sourceTree = "<group>"; };
+		DC2412D42626B97300F42143 /* 荷塘月色.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "荷塘月色.pdf"; sourceTree = "<group>"; };
 		DC2AE35C26241E14005C8CC7 /* BarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarViewController.swift; sourceTree = "<group>"; };
 		EA031C0026248BAD00180969 /* BarTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarTestViewController.swift; sourceTree = "<group>"; };
 		EA031C042625CACD00180969 /* ScrollViewHeaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewHeaderViewController.swift; sourceTree = "<group>"; };
@@ -55,6 +61,14 @@
 				DC2412C9262690BC00F42143 /* SystemShareViewController.swift */,
 			);
 			path = "系统原生分享";
+			sourceTree = "<group>";
+		};
+		DC2412CF2626B66600F42143 /* 文件预览、打开、分享 */ = {
+			isa = PBXGroup;
+			children = (
+				DC2412D02626B6AD00F42143 /* FileOpeningViewController.swift */,
+			);
+			path = "文件预览、打开、分享";
 			sourceTree = "<group>";
 		};
 		DC2AE36126241E23005C8CC7 /* Bar */ = {
@@ -96,6 +110,7 @@
 				DC2AE36126241E23005C8CC7 /* Bar */,
 				EA031C032625CA7100180969 /* Scroll View Header */,
 				DC2412C82626906400F42143 /* 系统原生分享 */,
+				DC2412CF2626B66600F42143 /* 文件预览、打开、分享 */,
 				EAEBAD492621B176005DE62B /* AppDelegate.swift */,
 				EAEBAD612621B3A7005DE62B /* RootTabBarController.swift */,
 				EAEBAD642621B3E6005DE62B /* HomeViewController.swift */,
@@ -103,6 +118,8 @@
 				EA031C082625CB2200180969 /* HomeModule.storyboard */,
 				EA031C0B2625CB3300180969 /* MineModule.storyboard */,
 				EAEBAD522621B178005DE62B /* Assets.xcassets */,
+				DC2412D42626B97300F42143 /* 荷塘月色.pdf */,
+				DC2412D32626B97300F42143 /* pretty.jpg */,
 				EAEBAD542621B178005DE62B /* LaunchScreen.storyboard */,
 				EAEBAD572621B178005DE62B /* Info.plist */,
 			);
@@ -168,6 +185,8 @@
 			files = (
 				EAEBAD562621B178005DE62B /* LaunchScreen.storyboard in Resources */,
 				EA031C092625CB2200180969 /* HomeModule.storyboard in Resources */,
+				DC2412D52626B97300F42143 /* pretty.jpg in Resources */,
+				DC2412D62626B97300F42143 /* 荷塘月色.pdf in Resources */,
 				EAEBAD532621B178005DE62B /* Assets.xcassets in Resources */,
 				EA031C0C2625CB3300180969 /* MineModule.storyboard in Resources */,
 			);
@@ -185,6 +204,7 @@
 				EAEBAD4A2621B176005DE62B /* AppDelegate.swift in Sources */,
 				DC2AE35E26241E14005C8CC7 /* BarViewController.swift in Sources */,
 				EAEBAD622621B3A7005DE62B /* RootTabBarController.swift in Sources */,
+				DC2412D12626B6AD00F42143 /* FileOpeningViewController.swift in Sources */,
 				EAEBAD662621B3E6005DE62B /* HomeViewController.swift in Sources */,
 				EAEBAD6B2621B3F0005DE62B /* MineViewController.swift in Sources */,
 				EA031C052625CACD00180969 /* ScrollViewHeaderViewController.swift in Sources */,
