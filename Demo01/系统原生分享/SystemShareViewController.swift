@@ -31,10 +31,20 @@ class SystemShareViewController: UIViewController {
     }
     
     @objc func shareAction() {
+        /// 说明文档
+        /// https://nshipster.com/uiactivityviewcontroller/
+        /// UIActivityViewController provides a unified interface for users to share and perform actions on strings, images, URLs, and other items within an app.
         let text = "分享的文字"
         let url = URL.init(string: "https://www.baidu.com")!
         let image = UIImage.init(named: "system-share-1")!
         let activityVC = UIActivityViewController.init(activityItems: [text, url, image], applicationActivities: nil)
+        activityVC.completionWithItemsHandler = { (activityType, completed, returnedItems, activityError) -> Void in
+            if completed {
+                print("ensure")
+            } else {
+                print("cancel")
+            }
+        }
         self.present(activityVC, animated: true, completion: nil)
     }
 
