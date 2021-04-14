@@ -10,7 +10,7 @@ import UIKit
 class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     let tableView = UITableView()
-    let titleList = ["导航栏、状态栏设置", "Scroll View Header", "系统原生分享", "文件预览、打开、分享"]
+    let titleList = ["导航栏、状态栏设置", "Scroll View Header", "系统原生分享", "文件预览、打开、分享", "UIPageViewController"]
     
     // MARK: - life cirle
     
@@ -86,6 +86,12 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         }
         if indexPath.row == 3 {
             navigationController?.pushViewController(FileOpeningViewController(), animated: true)
+            return
+        }
+        if indexPath.row == 4 {
+            let homeSB = UIStoryboard.init(name: "HomeModule", bundle: nil)
+            let pageVC = homeSB.instantiateViewController(identifier: "PageViewController")
+            navigationController?.pushViewController(pageVC, animated: true)
             return
         }
     }

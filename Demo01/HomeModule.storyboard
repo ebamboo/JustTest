@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -51,6 +52,65 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Fb-BK-yR2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-181.15942028985509" y="161.38392857142856"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="Zzh-VN-h3g">
+            <objects>
+                <viewController storyboardIdentifier="PageViewController" id="aMs-AS-mJt" customClass="PageViewController" customModule="Demo01" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Nv2-zR-hHq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NRe-X1-U1D">
+                                <rect key="frame" x="0.0" y="248" width="414" height="400"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="bLJ-9H-4bU"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NLz-Ln-vDf">
+                                <rect key="frame" x="91.5" y="792" width="31" height="30"/>
+                                <state key="normal" title="后退"/>
+                                <connections>
+                                    <action selector="backAction:" destination="aMs-AS-mJt" eventType="touchUpInside" id="paW-65-bpB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nl0-Lo-pHb">
+                                <rect key="frame" x="291.5" y="792" width="31" height="30"/>
+                                <state key="normal" title="前进"/>
+                                <connections>
+                                    <action selector="forwardAction:" destination="aMs-AS-mJt" eventType="touchUpInside" id="hfo-li-Uxv"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P1i-Tb-zUl">
+                                <rect key="frame" x="202" y="84" width="10.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LMT-Rg-ma4"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="NLz-Ln-vDf" firstAttribute="centerX" secondItem="Nv2-zR-hHq" secondAttribute="centerX" constant="-100" id="33O-EM-e5W"/>
+                            <constraint firstItem="P1i-Tb-zUl" firstAttribute="centerX" secondItem="Nv2-zR-hHq" secondAttribute="centerX" id="86s-TG-aN2"/>
+                            <constraint firstItem="P1i-Tb-zUl" firstAttribute="top" secondItem="LMT-Rg-ma4" secondAttribute="top" constant="40" id="8Ce-Hv-W7e"/>
+                            <constraint firstItem="LMT-Rg-ma4" firstAttribute="bottom" secondItem="NLz-Ln-vDf" secondAttribute="bottom" constant="40" id="DJD-kV-LLP"/>
+                            <constraint firstItem="nl0-Lo-pHb" firstAttribute="centerX" secondItem="Nv2-zR-hHq" secondAttribute="centerX" constant="100" id="Mwc-fD-sUV"/>
+                            <constraint firstItem="NRe-X1-U1D" firstAttribute="leading" secondItem="LMT-Rg-ma4" secondAttribute="leading" id="NbH-oC-XdX"/>
+                            <constraint firstItem="NRe-X1-U1D" firstAttribute="centerY" secondItem="Nv2-zR-hHq" secondAttribute="centerY" id="OMP-Za-p4C"/>
+                            <constraint firstItem="LMT-Rg-ma4" firstAttribute="bottom" secondItem="nl0-Lo-pHb" secondAttribute="bottom" constant="40" id="ZOH-Au-gJC"/>
+                            <constraint firstItem="LMT-Rg-ma4" firstAttribute="trailing" secondItem="NRe-X1-U1D" secondAttribute="trailing" id="lpt-3O-cJG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="contentView" destination="NRe-X1-U1D" id="rVv-TA-9fg"/>
+                        <outlet property="indexLabel" destination="P1i-Tb-zUl" id="r7S-Dv-xUu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J3Z-Hn-xE9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="459" y="188"/>
         </scene>
     </scenes>
     <resources>

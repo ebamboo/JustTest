@@ -16,6 +16,10 @@
 		EA031C052625CACD00180969 /* ScrollViewHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA031C042625CACD00180969 /* ScrollViewHeaderViewController.swift */; };
 		EA031C092625CB2200180969 /* HomeModule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA031C082625CB2200180969 /* HomeModule.storyboard */; };
 		EA031C0C2625CB3300180969 /* MineModule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA031C0B2625CB3300180969 /* MineModule.storyboard */; };
+		EA031C1326271AE400180969 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA031C1226271AE400180969 /* PageViewController.swift */; };
+		EA031C1726271BF200180969 /* PageViewController01.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA031C1626271BF200180969 /* PageViewController01.swift */; };
+		EA031C1A26271BFB00180969 /* PageViewController02.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA031C1926271BFB00180969 /* PageViewController02.swift */; };
+		EA031C1D26271C0400180969 /* PageViewController03.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA031C1C26271C0400180969 /* PageViewController03.swift */; };
 		EAEBAD4A2621B176005DE62B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEBAD492621B176005DE62B /* AppDelegate.swift */; };
 		EAEBAD532621B178005DE62B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAEBAD522621B178005DE62B /* Assets.xcassets */; };
 		EAEBAD562621B178005DE62B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAEBAD542621B178005DE62B /* LaunchScreen.storyboard */; };
@@ -34,6 +38,10 @@
 		EA031C042625CACD00180969 /* ScrollViewHeaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewHeaderViewController.swift; sourceTree = "<group>"; };
 		EA031C082625CB2200180969 /* HomeModule.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeModule.storyboard; sourceTree = "<group>"; };
 		EA031C0B2625CB3300180969 /* MineModule.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MineModule.storyboard; sourceTree = "<group>"; };
+		EA031C1226271AE400180969 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		EA031C1626271BF200180969 /* PageViewController01.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController01.swift; sourceTree = "<group>"; };
+		EA031C1926271BFB00180969 /* PageViewController02.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController02.swift; sourceTree = "<group>"; };
+		EA031C1C26271C0400180969 /* PageViewController03.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController03.swift; sourceTree = "<group>"; };
 		EAEBAD462621B176005DE62B /* Demo01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo01.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAEBAD492621B176005DE62B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EAEBAD522621B178005DE62B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -88,6 +96,17 @@
 			path = "Scroll View Header";
 			sourceTree = "<group>";
 		};
+		EA031C1126271AC000180969 /* UIPageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EA031C1226271AE400180969 /* PageViewController.swift */,
+				EA031C1626271BF200180969 /* PageViewController01.swift */,
+				EA031C1926271BFB00180969 /* PageViewController02.swift */,
+				EA031C1C26271C0400180969 /* PageViewController03.swift */,
+			);
+			path = UIPageViewController;
+			sourceTree = "<group>";
+		};
 		EAEBAD3D2621B176005DE62B = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +130,7 @@
 				EA031C032625CA7100180969 /* Scroll View Header */,
 				DC2412C82626906400F42143 /* 系统原生分享 */,
 				DC2412CF2626B66600F42143 /* 文件预览、打开、分享 */,
+				EA031C1126271AC000180969 /* UIPageViewController */,
 				EAEBAD492621B176005DE62B /* AppDelegate.swift */,
 				EAEBAD612621B3A7005DE62B /* RootTabBarController.swift */,
 				EAEBAD642621B3E6005DE62B /* HomeViewController.swift */,
@@ -200,13 +220,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA031C0126248BAD00180969 /* BarTestViewController.swift in Sources */,
+				EA031C1326271AE400180969 /* PageViewController.swift in Sources */,
 				DC2412CA262690BC00F42143 /* SystemShareViewController.swift in Sources */,
+				EA031C1A26271BFB00180969 /* PageViewController02.swift in Sources */,
 				EAEBAD4A2621B176005DE62B /* AppDelegate.swift in Sources */,
 				DC2AE35E26241E14005C8CC7 /* BarViewController.swift in Sources */,
+				EA031C1D26271C0400180969 /* PageViewController03.swift in Sources */,
 				EAEBAD622621B3A7005DE62B /* RootTabBarController.swift in Sources */,
 				DC2412D12626B6AD00F42143 /* FileOpeningViewController.swift in Sources */,
 				EAEBAD662621B3E6005DE62B /* HomeViewController.swift in Sources */,
 				EAEBAD6B2621B3F0005DE62B /* MineViewController.swift in Sources */,
+				EA031C1726271BF200180969 /* PageViewController01.swift in Sources */,
 				EA031C052625CACD00180969 /* ScrollViewHeaderViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
