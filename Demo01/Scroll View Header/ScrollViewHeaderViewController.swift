@@ -27,12 +27,21 @@ class ScrollViewHeaderViewController: UIViewController, UITableViewDataSource, U
         print("\(frame)")
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.navigationBar.isHidden = true
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.navigationBar.isHidden = false
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationController?.navigationBar.isHidden = true
         // 关键是给 tableview 添加一个和 ”头“ 等高的 ”头“
         tableView.addSubview(tableHeaer)
-        tableView.tableHeaderView = UIView.init(frame: CGRect.init(x: 0, y: 0, width: 200, height: 200))
+        tableView.tableHeaderView = UIView.init(frame: CGRect.init(x: 0, y: 0, width: 0, height: 200))
     }
 
     // MARK: - table view

@@ -24,7 +24,7 @@ class BarTestViewController: UIViewController {
 //    }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
-        return .darkContent
+        return .lightContent
     }
     
     override func viewDidLoad() {
