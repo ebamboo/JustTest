@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC2412CA262690BC00F42143 /* SystemShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2412C9262690BC00F42143 /* SystemShareViewController.swift */; };
 		DC2AE35E26241E14005C8CC7 /* BarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2AE35C26241E14005C8CC7 /* BarViewController.swift */; };
 		EA031C0126248BAD00180969 /* BarTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA031C0026248BAD00180969 /* BarTestViewController.swift */; };
 		EA031C052625CACD00180969 /* ScrollViewHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA031C042625CACD00180969 /* ScrollViewHeaderViewController.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DC2412C9262690BC00F42143 /* SystemShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemShareViewController.swift; sourceTree = "<group>"; };
 		DC2AE35C26241E14005C8CC7 /* BarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarViewController.swift; sourceTree = "<group>"; };
 		EA031C0026248BAD00180969 /* BarTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarTestViewController.swift; sourceTree = "<group>"; };
 		EA031C042625CACD00180969 /* ScrollViewHeaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewHeaderViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +49,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DC2412C82626906400F42143 /* 系统原生分享 */ = {
+			isa = PBXGroup;
+			children = (
+				DC2412C9262690BC00F42143 /* SystemShareViewController.swift */,
+			);
+			path = "系统原生分享";
+			sourceTree = "<group>";
+		};
 		DC2AE36126241E23005C8CC7 /* Bar */ = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +95,7 @@
 			children = (
 				DC2AE36126241E23005C8CC7 /* Bar */,
 				EA031C032625CA7100180969 /* Scroll View Header */,
+				DC2412C82626906400F42143 /* 系统原生分享 */,
 				EAEBAD492621B176005DE62B /* AppDelegate.swift */,
 				EAEBAD612621B3A7005DE62B /* RootTabBarController.swift */,
 				EAEBAD642621B3E6005DE62B /* HomeViewController.swift */,
@@ -170,6 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA031C0126248BAD00180969 /* BarTestViewController.swift in Sources */,
+				DC2412CA262690BC00F42143 /* SystemShareViewController.swift in Sources */,
 				EAEBAD4A2621B176005DE62B /* AppDelegate.swift in Sources */,
 				DC2AE35E26241E14005C8CC7 /* BarViewController.swift in Sources */,
 				EAEBAD622621B3A7005DE62B /* RootTabBarController.swift in Sources */,

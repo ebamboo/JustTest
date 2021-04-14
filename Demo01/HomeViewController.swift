@@ -10,7 +10,7 @@ import UIKit
 class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     let tableView = UITableView()
-    let titleList = ["导航栏、状态栏设置", "Scroll View Header"]
+    let titleList = ["导航栏、状态栏设置", "Scroll View Header", "系统原生分享"]
     
     // MARK: - life cirle
     
@@ -78,6 +78,10 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
             let homeSB = UIStoryboard.init(name: "HomeModule", bundle: nil)
             let scrollViewHeaderVC = homeSB.instantiateViewController(identifier: "ScrollViewHeaderViewController")
             navigationController?.pushViewController(scrollViewHeaderVC, animated: true)
+            return
+        }
+        if indexPath.row == 2 {
+            navigationController?.pushViewController(SystemShareViewController(), animated: true)
             return
         }
     }

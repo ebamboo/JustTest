@@ -91,7 +91,6 @@ class ScrollViewHeaderViewController: UIViewController, UITableViewDataSource, U
         if offsetY < 0 {
             tableHeaer.frame = CGRect.init(x: 0, y: offsetY, width: scrollView.bounds.size.width, height: 200-offsetY)
         }
-        
     }
     
     func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
