@@ -12,6 +12,7 @@
 		DC2412D52626B97300F42143 /* pretty.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DC2412D32626B97300F42143 /* pretty.jpg */; };
 		DC2412D62626B97300F42143 /* 荷塘月色.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DC2412D42626B97300F42143 /* 荷塘月色.pdf */; };
 		DC2AE35E26241E14005C8CC7 /* BarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2AE35C26241E14005C8CC7 /* BarViewController.swift */; };
+		DC82D32E2627D26F00BC7BA2 /* SuspensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC82D32D2627D26F00BC7BA2 /* SuspensionViewController.swift */; };
 		EA031C0126248BAD00180969 /* BarTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA031C0026248BAD00180969 /* BarTestViewController.swift */; };
 		EA031C052625CACD00180969 /* ScrollViewHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA031C042625CACD00180969 /* ScrollViewHeaderViewController.swift */; };
 		EA031C092625CB2200180969 /* HomeModule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA031C082625CB2200180969 /* HomeModule.storyboard */; };
@@ -34,6 +35,7 @@
 		DC2412D32626B97300F42143 /* pretty.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pretty.jpg; sourceTree = "<group>"; };
 		DC2412D42626B97300F42143 /* 荷塘月色.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "荷塘月色.pdf"; sourceTree = "<group>"; };
 		DC2AE35C26241E14005C8CC7 /* BarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarViewController.swift; sourceTree = "<group>"; };
+		DC82D32D2627D26F00BC7BA2 /* SuspensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuspensionViewController.swift; sourceTree = "<group>"; };
 		EA031C0026248BAD00180969 /* BarTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarTestViewController.swift; sourceTree = "<group>"; };
 		EA031C042625CACD00180969 /* ScrollViewHeaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewHeaderViewController.swift; sourceTree = "<group>"; };
 		EA031C082625CB2200180969 /* HomeModule.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeModule.storyboard; sourceTree = "<group>"; };
@@ -88,6 +90,14 @@
 			path = Bar;
 			sourceTree = "<group>";
 		};
+		DC82D32C2627D14200BC7BA2 /* 悬浮可滑动按钮 */ = {
+			isa = PBXGroup;
+			children = (
+				DC82D32D2627D26F00BC7BA2 /* SuspensionViewController.swift */,
+			);
+			path = "悬浮可滑动按钮";
+			sourceTree = "<group>";
+		};
 		EA031C032625CA7100180969 /* Scroll View Header */ = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +141,7 @@
 				DC2412C82626906400F42143 /* 系统原生分享 */,
 				DC2412CF2626B66600F42143 /* 文件预览、打开、分享 */,
 				EA031C1126271AC000180969 /* UIPageViewController */,
+				DC82D32C2627D14200BC7BA2 /* 悬浮可滑动按钮 */,
 				EAEBAD492621B176005DE62B /* AppDelegate.swift */,
 				EAEBAD612621B3A7005DE62B /* RootTabBarController.swift */,
 				EAEBAD642621B3E6005DE62B /* HomeViewController.swift */,
@@ -232,6 +243,7 @@
 				EAEBAD6B2621B3F0005DE62B /* MineViewController.swift in Sources */,
 				EA031C1726271BF200180969 /* PageViewController01.swift in Sources */,
 				EA031C052625CACD00180969 /* ScrollViewHeaderViewController.swift in Sources */,
+				DC82D32E2627D26F00BC7BA2 /* SuspensionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
