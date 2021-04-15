@@ -27,7 +27,6 @@ class PageViewController: UIViewController, UIPageViewControllerDataSource, UIPa
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "UIPageViewController"
-        view.backgroundColor = .systemGroupedBackground
         
         /// TransitionStyle：书本翻页风格和 Scroll 风格
         /// NavigationOrientation 水平方向和垂直方向
