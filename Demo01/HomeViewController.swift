@@ -12,7 +12,8 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     let tableView = UITableView()
     let titleList = ["导航栏、状态栏设置", "Scroll View Header",
                      "系统原生分享", "文件预览、打开、分享",
-                     "UIPageViewController", "悬浮可滑动按钮"
+                     "UIPageViewController", "悬浮可滑动按钮",
+                     "自定义模态动画"
     ]
     
     // MARK: - life cirle
@@ -99,6 +100,10 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         }
         if indexPath.row == 5 {
             navigationController?.pushViewController(SuspensionViewController(), animated: true)
+            return
+        }
+        if indexPath.row == 6 {
+            navigationController?.pushViewController(ModelTestViewController01(), animated: true)
             return
         }
     }

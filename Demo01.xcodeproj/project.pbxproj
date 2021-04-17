@@ -21,6 +21,11 @@
 		EA031C1726271BF200180969 /* PageViewController01.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA031C1626271BF200180969 /* PageViewController01.swift */; };
 		EA031C1A26271BFB00180969 /* PageViewController02.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA031C1926271BFB00180969 /* PageViewController02.swift */; };
 		EA031C1D26271C0400180969 /* PageViewController03.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA031C1C26271C0400180969 /* PageViewController03.swift */; };
+		EA031CA52629ED8F00180969 /* ModelTestViewController01.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA031CA32629ED8F00180969 /* ModelTestViewController01.swift */; };
+		EA031CA62629ED8F00180969 /* ModelTestViewController01.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA031CA42629ED8F00180969 /* ModelTestViewController01.xib */; };
+		EA031CAA2629ED9D00180969 /* ModelTestViewController02.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA031CA82629ED9D00180969 /* ModelTestViewController02.swift */; };
+		EA031CAB2629ED9D00180969 /* ModelTestViewController02.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA031CA92629ED9D00180969 /* ModelTestViewController02.xib */; };
+		EA031CAE2629F17200180969 /* ModelAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA031CAD2629F17200180969 /* ModelAnimator.swift */; };
 		EAEBAD4A2621B176005DE62B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEBAD492621B176005DE62B /* AppDelegate.swift */; };
 		EAEBAD532621B178005DE62B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAEBAD522621B178005DE62B /* Assets.xcassets */; };
 		EAEBAD562621B178005DE62B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAEBAD542621B178005DE62B /* LaunchScreen.storyboard */; };
@@ -44,6 +49,11 @@
 		EA031C1626271BF200180969 /* PageViewController01.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController01.swift; sourceTree = "<group>"; };
 		EA031C1926271BFB00180969 /* PageViewController02.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController02.swift; sourceTree = "<group>"; };
 		EA031C1C26271C0400180969 /* PageViewController03.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController03.swift; sourceTree = "<group>"; };
+		EA031CA32629ED8F00180969 /* ModelTestViewController01.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelTestViewController01.swift; sourceTree = "<group>"; };
+		EA031CA42629ED8F00180969 /* ModelTestViewController01.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ModelTestViewController01.xib; sourceTree = "<group>"; };
+		EA031CA82629ED9D00180969 /* ModelTestViewController02.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelTestViewController02.swift; sourceTree = "<group>"; };
+		EA031CA92629ED9D00180969 /* ModelTestViewController02.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ModelTestViewController02.xib; sourceTree = "<group>"; };
+		EA031CAD2629F17200180969 /* ModelAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelAnimator.swift; sourceTree = "<group>"; };
 		EAEBAD462621B176005DE62B /* Demo01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo01.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAEBAD492621B176005DE62B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EAEBAD522621B178005DE62B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -117,6 +127,18 @@
 			path = UIPageViewController;
 			sourceTree = "<group>";
 		};
+		EA031CA22629ED4E00180969 /* 自定义模态视图动画 */ = {
+			isa = PBXGroup;
+			children = (
+				EA031CA32629ED8F00180969 /* ModelTestViewController01.swift */,
+				EA031CA42629ED8F00180969 /* ModelTestViewController01.xib */,
+				EA031CA82629ED9D00180969 /* ModelTestViewController02.swift */,
+				EA031CA92629ED9D00180969 /* ModelTestViewController02.xib */,
+				EA031CAD2629F17200180969 /* ModelAnimator.swift */,
+			);
+			path = "自定义模态视图动画";
+			sourceTree = "<group>";
+		};
 		EAEBAD3D2621B176005DE62B = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +164,7 @@
 				DC2412CF2626B66600F42143 /* 文件预览、打开、分享 */,
 				EA031C1126271AC000180969 /* UIPageViewController */,
 				DC82D32C2627D14200BC7BA2 /* 悬浮可滑动按钮 */,
+				EA031CA22629ED4E00180969 /* 自定义模态视图动画 */,
 				EAEBAD492621B176005DE62B /* AppDelegate.swift */,
 				EAEBAD612621B3A7005DE62B /* RootTabBarController.swift */,
 				EAEBAD642621B3E6005DE62B /* HomeViewController.swift */,
@@ -214,9 +237,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA031CAB2629ED9D00180969 /* ModelTestViewController02.xib in Resources */,
 				EAEBAD562621B178005DE62B /* LaunchScreen.storyboard in Resources */,
 				EA031C092625CB2200180969 /* HomeModule.storyboard in Resources */,
 				DC2412D52626B97300F42143 /* pretty.jpg in Resources */,
+				EA031CA62629ED8F00180969 /* ModelTestViewController01.xib in Resources */,
 				DC2412D62626B97300F42143 /* 荷塘月色.pdf in Resources */,
 				EAEBAD532621B178005DE62B /* Assets.xcassets in Resources */,
 				EA031C0C2625CB3300180969 /* MineModule.storyboard in Resources */,
@@ -240,7 +265,10 @@
 				EAEBAD622621B3A7005DE62B /* RootTabBarController.swift in Sources */,
 				DC2412D12626B6AD00F42143 /* FileOpeningViewController.swift in Sources */,
 				EAEBAD662621B3E6005DE62B /* HomeViewController.swift in Sources */,
+				EA031CAE2629F17200180969 /* ModelAnimator.swift in Sources */,
+				EA031CA52629ED8F00180969 /* ModelTestViewController01.swift in Sources */,
 				EAEBAD6B2621B3F0005DE62B /* MineViewController.swift in Sources */,
+				EA031CAA2629ED9D00180969 /* ModelTestViewController02.swift in Sources */,
 				EA031C1726271BF200180969 /* PageViewController01.swift in Sources */,
 				EA031C052625CACD00180969 /* ScrollViewHeaderViewController.swift in Sources */,
 				DC82D32E2627D26F00BC7BA2 /* SuspensionViewController.swift in Sources */,
