@@ -24,7 +24,9 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="Ea2-fa-2I9"/>
                     </constraints>
-                    <state key="normal" title="当前处在第二页"/>
+                    <state key="normal" title="当前处在第二页">
+                        <color key="titleColor" systemColor="systemBackgroundColor"/>
+                    </state>
                     <connections>
                         <action selector="testAction:" destination="-1" eventType="touchUpInside" id="U7k-Lm-qhC"/>
                     </connections>
@@ -32,14 +34,27 @@
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemIndigoColor"/>
+            <gestureRecognizers/>
             <constraints>
                 <constraint firstItem="cwC-Ri-2XO" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Tmn-Mz-xcP"/>
                 <constraint firstItem="cwC-Ri-2XO" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="nLU-h2-2lz"/>
             </constraints>
+            <connections>
+                <outletCollection property="gestureRecognizers" destination="04T-5W-PEf" appends="YES" id="h2c-US-Mfp"/>
+            </connections>
             <point key="canvasLocation" x="113" y="99"/>
         </view>
+        <screenEdgePanGestureRecognizer minimumNumberOfTouches="1" id="04T-5W-PEf">
+            <rectEdge key="edges" left="YES"/>
+            <connections>
+                <action selector="rightAction:" destination="-1" id="tmq-h5-UgP"/>
+            </connections>
+        </screenEdgePanGestureRecognizer>
     </objects>
     <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemIndigoColor">
             <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

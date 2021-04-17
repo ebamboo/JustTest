@@ -46,15 +46,20 @@ class ModelAnimator: NSObject, UIViewControllerAnimatedTransitioning {
         let dismiss = fromVC.presentingViewController == toVC
         
         // MARK: - 第三步：根据不同场景执行不同动画
+        
+        ///
+        /// !!!!!!一定要理解视图层次!!!!!!
+        /// UIViewController --> UIView --> Transition View --> Wrapper View
+        /// UIWindowScene、UITabBarController、UINavigationController
+        /// 除了以上三种控制器会生成 Transition View
+        /// 模态时也会生成 Transition View，并且 Transition View 直接在 window 上
+        /// presentedView 直接在 Transition View
+        ///
+        /// 做动画时注意 custom 和 fullScreen 的视图的层次结构
+        ///
+        
         if present {
-            
-            ///
-            /// 注意：发生 present 转场时
-            /// formView 已经在 containerView
-            /// toView 还么有在 containerView
-            /// 所以需要添加 toView 到 containerView
-            ///
-            
+            // 发生 present 转场时 toView 还么有在 containerView，需要添加 toView 到 containerView
             transitionContext.containerView.addSubview(toView)
             let containerFrame = transitionContext.initialFrame(for: fromVC)
             toView.frame = containerFrame.offsetBy(dx: containerFrame.size.width, dy: 0)
@@ -71,13 +76,6 @@ class ModelAnimator: NSObject, UIViewControllerAnimatedTransitioning {
             }
         }
         if dismiss {
-            
-            ///
-            /// 注意：发生 dismiss 转场时
-            /// formView 和 toView 都已经在 containerView
-            /// 所以不需要在去操作插入操作了
-            ///
-            
             UIView.animate(withDuration: self.transitionDuration(using: transitionContext)) {
                 let containerFrame = transitionContext.initialFrame(for: fromVC)
                 fromView.frame = containerFrame.offsetBy(dx: containerFrame.width, dy: 0);
