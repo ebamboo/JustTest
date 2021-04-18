@@ -85,6 +85,17 @@
                         <action selector="getAction:" destination="-1" eventType="touchUpInside" id="UNz-QW-pCa"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SyE-Td-qWL">
+                    <rect key="frame" x="177" y="483" width="60" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="At3-2y-ofY"/>
+                        <constraint firstAttribute="width" constant="60" id="hJG-Kh-Hpu"/>
+                    </constraints>
+                    <state key="normal" title="清空"/>
+                    <connections>
+                        <action selector="clearDataAction:" destination="-1" eventType="touchUpInside" id="Kgz-9A-NIT"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -95,6 +106,8 @@
                 <constraint firstItem="1lh-Wt-Fsx" firstAttribute="top" secondItem="sgW-54-oFp" secondAttribute="bottom" constant="20" id="EDE-Gw-FMx"/>
                 <constraint firstItem="QCa-mt-S3C" firstAttribute="leading" secondItem="sgW-54-oFp" secondAttribute="trailing" constant="20" id="I4U-AO-NOz"/>
                 <constraint firstItem="emb-N8-3fv" firstAttribute="top" secondItem="mqe-52-Dps" secondAttribute="bottom" constant="20" id="K8e-CQ-Xoz"/>
+                <constraint firstItem="SyE-Td-qWL" firstAttribute="top" secondItem="1lh-Wt-Fsx" secondAttribute="bottom" constant="20" id="SAM-cu-d14"/>
+                <constraint firstItem="SyE-Td-qWL" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="UGi-Gh-4HL"/>
                 <constraint firstItem="sgW-54-oFp" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Vcw-hc-9sg"/>
                 <constraint firstItem="QCa-mt-S3C" firstAttribute="centerY" secondItem="sgW-54-oFp" secondAttribute="centerY" id="XbQ-tS-g5F"/>
                 <constraint firstItem="i8G-j5-FCt" firstAttribute="leading" secondItem="mqe-52-Dps" secondAttribute="trailing" constant="20" id="hRj-IL-ZN2"/>

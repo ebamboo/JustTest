@@ -15,34 +15,52 @@ class KeychainViewController: UIViewController {
     @IBOutlet weak var accountLabel: UILabel!
     @IBOutlet weak var passwordLabel: UILabel!
     
+    
     let identifier = "item01"
     let service = "com.beizhu.demo01"
-    let accessGroup = "com.beizhu"
+    let accessGroup: String? = nil
     
-    var dataManager: KeychainWrapper!
+    var keychain: Keychain!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Keychain 使用封装"
-        dataManager = KeychainWrapper.init(identifier: identifier, service: service, accessGroup: nil)
-//        dataManager.resetKeychainItem()
+        keychain = Keychain.init(identifier: identifier, service: service, accessGroup: nil)
     }
 
     @IBAction func saveAction(_ sender: Any) {
-//        dataManager.setAccountAndPassword(account: accountField.text ?? <#default value#>, password: passwordField.text?.data(using: .utf8) ?? <#default value#>)
-        dataManager.setAccountAndPassword(account: "bamboo", password: "888888".data(using: .utf8)!)
+        guard let account = accountField.text,
+              account.count > 0,
+              let password = passwordField.text,
+              password.count > 0
+        else { return }
+        let success = keychain.setAccountAndPassword(account: account, password: password.data(using: .utf8)!)
+        if success {
+            print("set successful")
+        } else {
+            print("set failed")
+        }
     }
     
     @IBAction func getAction(_ sender: Any) {
-//        let accountAndPassword = dataManager.getAccountAndPassword()
-//        accountLabel.text = accountAndPassword.account
-//        passwordLabel.text = (accountAndPassword.password as? String)
-//        passwordLabel.text = dataManager.getPassword(account: "bamboo")
-//        print(dataManager.getAccountAndPassword())
-        let result = dataManager.getAccountAndPassword()
-        print(result)
-        if let pass = result?.password {
-            print(String(data: pass, encoding: .utf8))
+        if let result = keychain.getAccountAndPassword() {
+            if let account = result.account,
+               let password = result.password {
+                accountLabel.text = account
+                passwordLabel.text = String(data: password, encoding: .utf8)!
+                return
+            }
+        }
+        accountLabel.text = ""
+        passwordLabel.text = ""
+    }
+    
+    @IBAction func clearDataAction(_ sender: Any) {
+        let success = keychain.reset()
+        if success {
+            print("reset successful")
+        } else {
+            print("reset failed")
         }
     }
     

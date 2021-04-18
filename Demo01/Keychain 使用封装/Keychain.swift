@@ -7,7 +7,17 @@
 
 import UIKit
 
-class KeychainWrapper: NSObject {
+class Keychain: NSObject {
+    
+    // MARK: - lief circle
+    // MARK: -
+    
+    ///
+    /// 通常 service 使用 bundle identifier 来表明一个 App 在 keychain 唯一标识
+    /// 但是，一个 App 又可能有多个数据存储在 keychain 中，因此需要 identifier 来唯一表明一个 item
+    /// identifier 和 service 可以认为是主键
+    /// accessGroup 使用要注意和开发者账号前缀有关，要使用全称
+    ///
     
     private let identifier: String
     private let service: String
@@ -34,6 +44,9 @@ class KeychainWrapper: NSObject {
         self.accessGroup = accessGroup
         super.init()
     }
+    
+    // MARK: - public method
+    // MARK: -
     
     func getAccountAndPassword() -> (account: String?, password: Data?)? {
         var query = self.query()
@@ -78,7 +91,7 @@ class KeychainWrapper: NSObject {
         }
     }
     
-    func resetKeychainItem() -> Bool {
+    func reset() -> Bool {
         let status = SecItemDelete(self.query() as CFDictionary)
         return status == errSecSuccess
     }
