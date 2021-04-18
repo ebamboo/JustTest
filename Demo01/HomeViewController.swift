@@ -13,7 +13,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     let titleList = ["导航栏、状态栏设置", "Scroll View Header",
                      "系统原生分享", "文件预览、打开、分享",
                      "UIPageViewController", "悬浮可滑动按钮",
-                     "自定义模态动画"
+                     "自定义模态动画", "Keychain 使用封装"
     ]
     
     // MARK: - life cirle
@@ -104,6 +104,10 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         }
         if indexPath.row == 6 {
             navigationController?.pushViewController(ModelTestViewController01(), animated: true)
+            return
+        }
+        if indexPath.row == 7 {
+            navigationController?.pushViewController(KeychainViewController(), animated: true)
             return
         }
     }

@@ -26,6 +26,9 @@
 		EA031CAA2629ED9D00180969 /* ModelTestViewController02.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA031CA82629ED9D00180969 /* ModelTestViewController02.swift */; };
 		EA031CAB2629ED9D00180969 /* ModelTestViewController02.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA031CA92629ED9D00180969 /* ModelTestViewController02.xib */; };
 		EA031CAE2629F17200180969 /* ModelAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA031CAD2629F17200180969 /* ModelAnimator.swift */; };
+		EA7A6BCB262C008E00149932 /* KeychainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7A6BC9262C008E00149932 /* KeychainViewController.swift */; };
+		EA7A6BCC262C008E00149932 /* KeychainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA7A6BCA262C008E00149932 /* KeychainViewController.xib */; };
+		EA7A6BD0262C029A00149932 /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7A6BCF262C029A00149932 /* KeychainWrapper.swift */; };
 		EAEBAD4A2621B176005DE62B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEBAD492621B176005DE62B /* AppDelegate.swift */; };
 		EAEBAD532621B178005DE62B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAEBAD522621B178005DE62B /* Assets.xcassets */; };
 		EAEBAD562621B178005DE62B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAEBAD542621B178005DE62B /* LaunchScreen.storyboard */; };
@@ -54,6 +57,9 @@
 		EA031CA82629ED9D00180969 /* ModelTestViewController02.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelTestViewController02.swift; sourceTree = "<group>"; };
 		EA031CA92629ED9D00180969 /* ModelTestViewController02.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ModelTestViewController02.xib; sourceTree = "<group>"; };
 		EA031CAD2629F17200180969 /* ModelAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelAnimator.swift; sourceTree = "<group>"; };
+		EA7A6BC9262C008E00149932 /* KeychainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainViewController.swift; sourceTree = "<group>"; };
+		EA7A6BCA262C008E00149932 /* KeychainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KeychainViewController.xib; sourceTree = "<group>"; };
+		EA7A6BCF262C029A00149932 /* KeychainWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainWrapper.swift; sourceTree = "<group>"; };
 		EAEBAD462621B176005DE62B /* Demo01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo01.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAEBAD492621B176005DE62B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EAEBAD522621B178005DE62B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -139,6 +145,16 @@
 			path = "自定义模态视图动画";
 			sourceTree = "<group>";
 		};
+		EA7A6BC8262C002C00149932 /* Keychain 使用封装 */ = {
+			isa = PBXGroup;
+			children = (
+				EA7A6BC9262C008E00149932 /* KeychainViewController.swift */,
+				EA7A6BCA262C008E00149932 /* KeychainViewController.xib */,
+				EA7A6BCF262C029A00149932 /* KeychainWrapper.swift */,
+			);
+			path = "Keychain 使用封装";
+			sourceTree = "<group>";
+		};
 		EAEBAD3D2621B176005DE62B = {
 			isa = PBXGroup;
 			children = (
@@ -165,6 +181,7 @@
 				EA031C1126271AC000180969 /* UIPageViewController */,
 				DC82D32C2627D14200BC7BA2 /* 悬浮可滑动按钮 */,
 				EA031CA22629ED4E00180969 /* 自定义模态视图动画 */,
+				EA7A6BC8262C002C00149932 /* Keychain 使用封装 */,
 				EAEBAD492621B176005DE62B /* AppDelegate.swift */,
 				EAEBAD612621B3A7005DE62B /* RootTabBarController.swift */,
 				EAEBAD642621B3E6005DE62B /* HomeViewController.swift */,
@@ -238,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA031CAB2629ED9D00180969 /* ModelTestViewController02.xib in Resources */,
+				EA7A6BCC262C008E00149932 /* KeychainViewController.xib in Resources */,
 				EAEBAD562621B178005DE62B /* LaunchScreen.storyboard in Resources */,
 				EA031C092625CB2200180969 /* HomeModule.storyboard in Resources */,
 				DC2412D52626B97300F42143 /* pretty.jpg in Resources */,
@@ -259,9 +277,11 @@
 				EA031C1326271AE400180969 /* PageViewController.swift in Sources */,
 				DC2412CA262690BC00F42143 /* SystemShareViewController.swift in Sources */,
 				EA031C1A26271BFB00180969 /* PageViewController02.swift in Sources */,
+				EA7A6BCB262C008E00149932 /* KeychainViewController.swift in Sources */,
 				EAEBAD4A2621B176005DE62B /* AppDelegate.swift in Sources */,
 				DC2AE35E26241E14005C8CC7 /* BarViewController.swift in Sources */,
 				EA031C1D26271C0400180969 /* PageViewController03.swift in Sources */,
+				EA7A6BD0262C029A00149932 /* KeychainWrapper.swift in Sources */,
 				EAEBAD622621B3A7005DE62B /* RootTabBarController.swift in Sources */,
 				DC2412D12626B6AD00F42143 /* FileOpeningViewController.swift in Sources */,
 				EAEBAD662621B3E6005DE62B /* HomeViewController.swift in Sources */,
