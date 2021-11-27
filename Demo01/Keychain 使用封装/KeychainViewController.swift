@@ -25,7 +25,7 @@ class KeychainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Keychain 使用封装"
-        keychain = Keychain.init(identifier: identifier, service: service, accessGroup: nil)
+        keychain = Keychain.init(identifier: identifier, service: service, accessGroup: accessGroup)
     }
 
     @IBAction func saveAction(_ sender: Any) {
@@ -34,33 +34,33 @@ class KeychainViewController: UIViewController {
               let password = passwordField.text,
               password.count > 0
         else { return }
-        let success = keychain.setAccountAndPassword(account: account, password: password.data(using: .utf8)!)
+        let success = keychain.writeAccountAndPassword(account: account, password: password.data(using: .utf8)!)
         if success {
-            print("set successful")
+            print("set success")
         } else {
-            print("set failed")
+            print("set failure")
         }
     }
     
     @IBAction func getAction(_ sender: Any) {
-        if let result = keychain.getAccountAndPassword() {
-            if let account = result.account,
-               let password = result.password {
-                accountLabel.text = account
-                passwordLabel.text = String(data: password, encoding: .utf8)!
-                return
-            }
+        if let result = keychain.readAccountAndPassword() {
+            print("read success")
+            accountLabel.text = result.account
+            passwordLabel.text = String(data: result.password, encoding: .utf8)!
+        } else {
+            print("read failure")
+            accountLabel.text = ""
+            passwordLabel.text = ""
         }
-        accountLabel.text = ""
-        passwordLabel.text = ""
+        
     }
     
     @IBAction func clearDataAction(_ sender: Any) {
         let success = keychain.reset()
         if success {
-            print("reset successful")
+            print("reset success")
         } else {
-            print("reset failed")
+            print("reset failure")
         }
     }
     
