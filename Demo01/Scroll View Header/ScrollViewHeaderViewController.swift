@@ -88,7 +88,10 @@ class ScrollViewHeaderViewController: UIViewController, UITableViewDataSource, U
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let offsetY = scrollView.contentOffset.y
+        print("offsetY = \(offsetY)")
         if offsetY < 0 {
+            // 动态保持 frame 刚好“盖住” “头”
+            // 因为设置了 contentModel 所以图片会自动缩放
             tableHeaer.frame = CGRect.init(x: 0, y: offsetY, width: scrollView.bounds.size.width, height: 200-offsetY)
         }
     }
