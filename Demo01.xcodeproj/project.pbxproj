@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ADCC899927546F7300912771 /* ThreadTestViewController02.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCC899727546F7300912771 /* ThreadTestViewController02.swift */; };
+		ADCC899A27546F7300912771 /* ThreadTestViewController02.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADCC899827546F7300912771 /* ThreadTestViewController02.xib */; };
 		ADF36E2027527FB7008BA1DB /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF36E1F27527FB7008BA1DB /* Keychain.swift */; };
 		DC2412CA262690BC00F42143 /* SystemShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2412C9262690BC00F42143 /* SystemShareViewController.swift */; };
 		DC2412D12626B6AD00F42143 /* FileOpeningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2412D02626B6AD00F42143 /* FileOpeningViewController.swift */; };
@@ -38,6 +40,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		ADCC899727546F7300912771 /* ThreadTestViewController02.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadTestViewController02.swift; sourceTree = "<group>"; };
+		ADCC899827546F7300912771 /* ThreadTestViewController02.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThreadTestViewController02.xib; sourceTree = "<group>"; };
 		ADF36E1F27527FB7008BA1DB /* Keychain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
 		DC2412C9262690BC00F42143 /* SystemShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemShareViewController.swift; sourceTree = "<group>"; };
 		DC2412D02626B6AD00F42143 /* FileOpeningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileOpeningViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +85,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ADCC899227546F3100912771 /* NSThread 线程保活和销毁 */ = {
+			isa = PBXGroup;
+			children = (
+				ADCC899727546F7300912771 /* ThreadTestViewController02.swift */,
+				ADCC899827546F7300912771 /* ThreadTestViewController02.xib */,
+			);
+			path = "NSThread 线程保活和销毁";
+			sourceTree = "<group>";
+		};
 		DC2412C82626906400F42143 /* 系统原生分享 */ = {
 			isa = PBXGroup;
 			children = (
@@ -182,6 +195,7 @@
 				DC82D32C2627D14200BC7BA2 /* 悬浮可滑动按钮 */,
 				EA031CA22629ED4E00180969 /* 自定义模态视图动画 */,
 				EA7A6BC8262C002C00149932 /* Keychain 使用封装 */,
+				ADCC899227546F3100912771 /* NSThread 线程保活和销毁 */,
 				EAEBAD492621B176005DE62B /* AppDelegate.swift */,
 				EAEBAD612621B3A7005DE62B /* RootTabBarController.swift */,
 				EAEBAD642621B3E6005DE62B /* HomeViewController.swift */,
@@ -257,6 +271,7 @@
 				EA031CAB2629ED9D00180969 /* ModelTestViewController02.xib in Resources */,
 				EA7A6BCC262C008E00149932 /* KeychainViewController.xib in Resources */,
 				EAEBAD562621B178005DE62B /* LaunchScreen.storyboard in Resources */,
+				ADCC899A27546F7300912771 /* ThreadTestViewController02.xib in Resources */,
 				EA031C092625CB2200180969 /* HomeModule.storyboard in Resources */,
 				DC2412D52626B97300F42143 /* pretty.jpg in Resources */,
 				EA031CA62629ED8F00180969 /* ModelTestViewController01.xib in Resources */,
@@ -274,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA031C0126248BAD00180969 /* BarTestViewController.swift in Sources */,
+				ADCC899927546F7300912771 /* ThreadTestViewController02.swift in Sources */,
 				EA031C1326271AE400180969 /* PageViewController.swift in Sources */,
 				DC2412CA262690BC00F42143 /* SystemShareViewController.swift in Sources */,
 				EA031C1A26271BFB00180969 /* PageViewController02.swift in Sources */,
