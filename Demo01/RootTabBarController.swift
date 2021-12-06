@@ -38,11 +38,13 @@ class RootTabBarController: UITabBarController {
         /// 设置导航栏返回按钮
         /// 或图片文字组合，或单独的图片，一般不存在单独文字
         /// 注意1：不需要文字时，通过 setBackButtonTitlePositionAdjustment 方法把文字置在屏幕外
-        /// 注意2：返回图规格 @3x 66*66 @2x 44*44 @1x 22*22
+        /// 注意2：返回图规格 @3x 66*66 @2x 44*44 @1x 22*22 时可以通过水平offset隐藏标题，并保持返回图垂直居中
+        ///       返回图规格 @3x 132*132 @2x 88*88 @1x 44*44 时可以通过垂直offset隐藏标题，并保持返回图垂直居中
+        ///       推荐使用 @1x 规格方式
         /// 注意3：自定义返回图片必须同时设置 backIndicatorImage 和 backIndicatorTransitionMaskImage
         UIBarButtonItem.appearance().setBackButtonTitlePositionAdjustment(UIOffset.init(horizontal: -9999, vertical: 0.0), for: .default)
-        UINavigationBar.appearance().backIndicatorImage = UIImage.init(named: "navigation-item-back")
-        UINavigationBar.appearance().backIndicatorTransitionMaskImage = UIImage.init(named: "navigation-item-back")
+        UINavigationBar.appearance().backIndicatorImage = UIImage(named: "navigation-item-back")
+        UINavigationBar.appearance().backIndicatorTransitionMaskImage = UIImage(named: "navigation-item-back")
         
         /// 去除分割线
         UINavigationBar.appearance().shadowImage = UIImage()
