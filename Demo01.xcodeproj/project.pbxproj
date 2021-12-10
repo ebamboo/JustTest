@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		ADA452E6275BA20100C15377 /* InputTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA452E4275BA20100C15377 /* InputTestViewController.swift */; };
 		ADA452E7275BA20100C15377 /* InputTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADA452E5275BA20100C15377 /* InputTestViewController.xib */; };
+		ADA945D527637F1E0024E8ED /* GradientTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA945D327637F1E0024E8ED /* GradientTestViewController.swift */; };
+		ADA945D627637F1E0024E8ED /* GradientTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADA945D427637F1E0024E8ED /* GradientTestViewController.xib */; };
 		ADCC899927546F7300912771 /* ThreadTestViewController02.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCC899727546F7300912771 /* ThreadTestViewController02.swift */; };
 		ADCC899A27546F7300912771 /* ThreadTestViewController02.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADCC899827546F7300912771 /* ThreadTestViewController02.xib */; };
 		ADF36E2027527FB7008BA1DB /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF36E1F27527FB7008BA1DB /* Keychain.swift */; };
@@ -44,6 +46,8 @@
 /* Begin PBXFileReference section */
 		ADA452E4275BA20100C15377 /* InputTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTestViewController.swift; sourceTree = "<group>"; };
 		ADA452E5275BA20100C15377 /* InputTestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InputTestViewController.xib; sourceTree = "<group>"; };
+		ADA945D327637F1E0024E8ED /* GradientTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientTestViewController.swift; sourceTree = "<group>"; };
+		ADA945D427637F1E0024E8ED /* GradientTestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GradientTestViewController.xib; sourceTree = "<group>"; };
 		ADCC899727546F7300912771 /* ThreadTestViewController02.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadTestViewController02.swift; sourceTree = "<group>"; };
 		ADCC899827546F7300912771 /* ThreadTestViewController02.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThreadTestViewController02.xib; sourceTree = "<group>"; };
 		ADF36E1F27527FB7008BA1DB /* Keychain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
@@ -96,6 +100,15 @@
 				ADA452E5275BA20100C15377 /* InputTestViewController.xib */,
 			);
 			path = "实时检测输入框是否合法";
+			sourceTree = "<group>";
+		};
+		ADA945D227637ED30024E8ED /* 视图颜色渐变CAGradientLayer */ = {
+			isa = PBXGroup;
+			children = (
+				ADA945D327637F1E0024E8ED /* GradientTestViewController.swift */,
+				ADA945D427637F1E0024E8ED /* GradientTestViewController.xib */,
+			);
+			path = "视图颜色渐变CAGradientLayer";
 			sourceTree = "<group>";
 		};
 		ADCC899227546F3100912771 /* NSThread 线程保活和销毁 */ = {
@@ -210,6 +223,7 @@
 				EA7A6BC8262C002C00149932 /* Keychain 使用封装 */,
 				ADCC899227546F3100912771 /* NSThread 线程保活和销毁 */,
 				ADA452E3275BA1AD00C15377 /* 实时检测输入框是否合法 */,
+				ADA945D227637ED30024E8ED /* 视图颜色渐变CAGradientLayer */,
 				EAEBAD492621B176005DE62B /* AppDelegate.swift */,
 				EAEBAD612621B3A7005DE62B /* RootTabBarController.swift */,
 				EAEBAD642621B3E6005DE62B /* HomeViewController.swift */,
@@ -286,6 +300,7 @@
 				ADA452E7275BA20100C15377 /* InputTestViewController.xib in Resources */,
 				EA7A6BCC262C008E00149932 /* KeychainViewController.xib in Resources */,
 				EAEBAD562621B178005DE62B /* LaunchScreen.storyboard in Resources */,
+				ADA945D627637F1E0024E8ED /* GradientTestViewController.xib in Resources */,
 				ADCC899A27546F7300912771 /* ThreadTestViewController02.xib in Resources */,
 				EA031C092625CB2200180969 /* HomeModule.storyboard in Resources */,
 				DC2412D52626B97300F42143 /* pretty.jpg in Resources */,
@@ -315,6 +330,7 @@
 				EA031C1D26271C0400180969 /* PageViewController03.swift in Sources */,
 				EAEBAD622621B3A7005DE62B /* RootTabBarController.swift in Sources */,
 				DC2412D12626B6AD00F42143 /* FileOpeningViewController.swift in Sources */,
+				ADA945D527637F1E0024E8ED /* GradientTestViewController.swift in Sources */,
 				EAEBAD662621B3E6005DE62B /* HomeViewController.swift in Sources */,
 				ADF36E2027527FB7008BA1DB /* Keychain.swift in Sources */,
 				EA031CAE2629F17200180969 /* ModelAnimator.swift in Sources */,

@@ -15,7 +15,8 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         "系统原生分享", "文件预览、打开、分享",
         "UIPageViewController", "悬浮可滑动按钮",
         "自定义模态动画", "Keychain 使用封装",
-        "NSTread利用runloop保活和销毁", "实时检测输入框是否合法"
+        "NSTread利用runloop保活和销毁", "实时检测输入框是否合法",
+        "视图颜色渐变CAGradientLayer"
     ]
     
     // MARK: - life cirle
@@ -40,10 +41,6 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     // MARK: - table view
     
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return titleList.count
     }
@@ -56,22 +53,6 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")
         cell?.textLabel?.text = titleList[indexPath.row]
         return cell!
-    }
-    
-    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 0.0
-    }
-    
-    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        return nil
-    }
-    
-    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        return 0.0
-    }
-    
-    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
-        return nil
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -118,6 +99,10 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         }
         if indexPath.row == 9 {
             navigationController?.pushViewController(InputTestViewController(), animated: true)
+            return
+        }
+        if indexPath.row == 10 {
+            navigationController?.pushViewController(GradientTestViewController(), animated: true)
             return
         }
     }
