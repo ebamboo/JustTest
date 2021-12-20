@@ -91,4 +91,20 @@ class CollectionViewPanTestViewController: UIViewController, UICollectionViewDat
         return 10
     }
 
+    // 一些可选的有意思的动画效果
+    
+    func collectionView(_ collectionView: UICollectionView, didHighlightItemAt indexPath: IndexPath) {
+        guard let cell = collectionView.cellForItem(at: indexPath) else { return }
+        UIView.animate(withDuration: 0.1) {
+          cell.transform = CGAffineTransform.identity.scaledBy(x: 0.8, y: 0.8)
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didUnhighlightItemAt indexPath: IndexPath) {
+        guard let cell = collectionView.cellForItem(at: indexPath) else { return }
+        UIView.animate(withDuration: 0.1) {
+          cell.transform = CGAffineTransform.identity
+        }
+    }
+    
 }
