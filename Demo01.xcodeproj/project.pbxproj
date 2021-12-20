@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD6EFDFB27703764007D2F4C /* FLowLayoutTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD6EFDF827703764007D2F4C /* FLowLayoutTestViewController.xib */; };
+		AD6EFDFC27703764007D2F4C /* TestFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6EFDF927703764007D2F4C /* TestFlowLayout.swift */; };
+		AD6EFDFD27703764007D2F4C /* FLowLayoutTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6EFDFA27703764007D2F4C /* FLowLayoutTestViewController.swift */; };
 		ADA452E6275BA20100C15377 /* InputTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA452E4275BA20100C15377 /* InputTestViewController.swift */; };
 		ADA452E7275BA20100C15377 /* InputTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADA452E5275BA20100C15377 /* InputTestViewController.xib */; };
 		ADA945D527637F1E0024E8ED /* GradientTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA945D327637F1E0024E8ED /* GradientTestViewController.swift */; };
@@ -44,6 +47,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AD6EFDF827703764007D2F4C /* FLowLayoutTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FLowLayoutTestViewController.xib; sourceTree = "<group>"; };
+		AD6EFDF927703764007D2F4C /* TestFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestFlowLayout.swift; sourceTree = "<group>"; };
+		AD6EFDFA27703764007D2F4C /* FLowLayoutTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FLowLayoutTestViewController.swift; sourceTree = "<group>"; };
 		ADA452E4275BA20100C15377 /* InputTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTestViewController.swift; sourceTree = "<group>"; };
 		ADA452E5275BA20100C15377 /* InputTestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InputTestViewController.xib; sourceTree = "<group>"; };
 		ADA945D327637F1E0024E8ED /* GradientTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientTestViewController.swift; sourceTree = "<group>"; };
@@ -93,6 +99,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD6EFDF727703764007D2F4C /* 自定义 UICollectionViewFlowLayout */ = {
+			isa = PBXGroup;
+			children = (
+				AD6EFDF927703764007D2F4C /* TestFlowLayout.swift */,
+				AD6EFDFA27703764007D2F4C /* FLowLayoutTestViewController.swift */,
+				AD6EFDF827703764007D2F4C /* FLowLayoutTestViewController.xib */,
+			);
+			path = "自定义 UICollectionViewFlowLayout";
+			sourceTree = "<group>";
+		};
 		ADA452E3275BA1AD00C15377 /* 实时检测输入框是否合法 */ = {
 			isa = PBXGroup;
 			children = (
@@ -224,6 +240,7 @@
 				ADCC899227546F3100912771 /* NSThread 线程保活和销毁 */,
 				ADA452E3275BA1AD00C15377 /* 实时检测输入框是否合法 */,
 				ADA945D227637ED30024E8ED /* 视图颜色渐变CAGradientLayer */,
+				AD6EFDF727703764007D2F4C /* 自定义 UICollectionViewFlowLayout */,
 				EAEBAD492621B176005DE62B /* AppDelegate.swift */,
 				EAEBAD612621B3A7005DE62B /* RootTabBarController.swift */,
 				EAEBAD642621B3E6005DE62B /* HomeViewController.swift */,
@@ -304,6 +321,7 @@
 				ADCC899A27546F7300912771 /* ThreadTestViewController02.xib in Resources */,
 				EA031C092625CB2200180969 /* HomeModule.storyboard in Resources */,
 				DC2412D52626B97300F42143 /* pretty.jpg in Resources */,
+				AD6EFDFB27703764007D2F4C /* FLowLayoutTestViewController.xib in Resources */,
 				EA031CA62629ED8F00180969 /* ModelTestViewController01.xib in Resources */,
 				DC2412D62626B97300F42143 /* 荷塘月色.pdf in Resources */,
 				EAEBAD532621B178005DE62B /* Assets.xcassets in Resources */,
@@ -328,8 +346,10 @@
 				EAEBAD4A2621B176005DE62B /* AppDelegate.swift in Sources */,
 				DC2AE35E26241E14005C8CC7 /* BarViewController.swift in Sources */,
 				EA031C1D26271C0400180969 /* PageViewController03.swift in Sources */,
+				AD6EFDFD27703764007D2F4C /* FLowLayoutTestViewController.swift in Sources */,
 				EAEBAD622621B3A7005DE62B /* RootTabBarController.swift in Sources */,
 				DC2412D12626B6AD00F42143 /* FileOpeningViewController.swift in Sources */,
+				AD6EFDFC27703764007D2F4C /* TestFlowLayout.swift in Sources */,
 				ADA945D527637F1E0024E8ED /* GradientTestViewController.swift in Sources */,
 				EAEBAD662621B3E6005DE62B /* HomeViewController.swift in Sources */,
 				ADF36E2027527FB7008BA1DB /* Keychain.swift in Sources */,

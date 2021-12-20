@@ -16,7 +16,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         "UIPageViewController", "悬浮可滑动按钮",
         "自定义模态动画", "Keychain 使用封装",
         "NSTread利用runloop保活和销毁", "实时检测输入框是否合法",
-        "视图颜色渐变CAGradientLayer"
+        "视图颜色渐变CAGradientLayer", "自定义 UICollectionViewFlowLayout"
     ]
     
     // MARK: - life cirle
@@ -103,6 +103,10 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         }
         if indexPath.row == 10 {
             navigationController?.pushViewController(GradientTestViewController(), animated: true)
+            return
+        }
+        if indexPath.row == 11 {
+            navigationController?.pushViewController(FLowLayoutTestViewController(), animated: true)
             return
         }
     }
