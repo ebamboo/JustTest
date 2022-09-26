@@ -17,7 +17,8 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         "自定义模态动画", "Keychain 使用封装",
         "NSTread利用runloop保活和销毁", "实时检测输入框是否合法",
         "视图颜色渐变CAGradientLayer", "自定义 UICollectionViewFlowLayout",
-        "原生UICollectionView拖动动画", "Xib或Storyboard添加Object"
+        "原生UICollectionView拖动动画", "Xib或Storyboard添加Object",
+        "UIScrollView 嵌套"
     ]
     
     // MARK: - life cirle
@@ -116,6 +117,10 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         }
         if indexPath.row == 13 {
             navigationController?.pushViewController(ObjectFromNibTestViewController(), animated: true)
+            return
+        }
+        if indexPath.row == 14 {
+            navigationController?.pushViewController(MultipleViewController(), animated: true)
             return
         }
     }

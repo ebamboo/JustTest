@@ -20,6 +20,13 @@
 		ADA945D627637F1E0024E8ED /* GradientTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADA945D427637F1E0024E8ED /* GradientTestViewController.xib */; };
 		ADCC899927546F7300912771 /* ThreadTestViewController02.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCC899727546F7300912771 /* ThreadTestViewController02.swift */; };
 		ADCC899A27546F7300912771 /* ThreadTestViewController02.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADCC899827546F7300912771 /* ThreadTestViewController02.xib */; };
+		ADCF49EE28E18DBC00EDFF82 /* MultipleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCF49EC28E18DBC00EDFF82 /* MultipleViewController.swift */; };
+		ADCF49EF28E18DBC00EDFF82 /* MultipleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADCF49ED28E18DBC00EDFF82 /* MultipleViewController.xib */; };
+		ADCF49F528E18EA900EDFF82 /* CustomScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCF49F428E18EA900EDFF82 /* CustomScrollView.swift */; };
+		ADCF49FC28E195BC00EDFF82 /* ScrollChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCF49FA28E195BC00EDFF82 /* ScrollChildViewController.swift */; };
+		ADCF49FD28E195BC00EDFF82 /* ScrollChildViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADCF49FB28E195BC00EDFF82 /* ScrollChildViewController.xib */; };
+		ADCF4A0028E195C900EDFF82 /* TableChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCF49FE28E195C900EDFF82 /* TableChildViewController.swift */; };
+		ADCF4A0128E195C900EDFF82 /* TableChildViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADCF49FF28E195C900EDFF82 /* TableChildViewController.xib */; };
 		ADDC562228A0E57C005EA7D1 /* ObjectFromNibTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDC562028A0E57C005EA7D1 /* ObjectFromNibTestViewController.swift */; };
 		ADDC562328A0E57C005EA7D1 /* ObjectFromNibTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADDC562128A0E57C005EA7D1 /* ObjectFromNibTestViewController.xib */; };
 		ADDC562528A0E5C1005EA7D1 /* TestStarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDC562428A0E5C1005EA7D1 /* TestStarView.swift */; };
@@ -68,6 +75,13 @@
 		ADA945D427637F1E0024E8ED /* GradientTestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GradientTestViewController.xib; sourceTree = "<group>"; };
 		ADCC899727546F7300912771 /* ThreadTestViewController02.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadTestViewController02.swift; sourceTree = "<group>"; };
 		ADCC899827546F7300912771 /* ThreadTestViewController02.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThreadTestViewController02.xib; sourceTree = "<group>"; };
+		ADCF49EC28E18DBC00EDFF82 /* MultipleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleViewController.swift; sourceTree = "<group>"; };
+		ADCF49ED28E18DBC00EDFF82 /* MultipleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MultipleViewController.xib; sourceTree = "<group>"; };
+		ADCF49F428E18EA900EDFF82 /* CustomScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomScrollView.swift; sourceTree = "<group>"; };
+		ADCF49FA28E195BC00EDFF82 /* ScrollChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollChildViewController.swift; sourceTree = "<group>"; };
+		ADCF49FB28E195BC00EDFF82 /* ScrollChildViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScrollChildViewController.xib; sourceTree = "<group>"; };
+		ADCF49FE28E195C900EDFF82 /* TableChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableChildViewController.swift; sourceTree = "<group>"; };
+		ADCF49FF28E195C900EDFF82 /* TableChildViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableChildViewController.xib; sourceTree = "<group>"; };
 		ADDC562028A0E57C005EA7D1 /* ObjectFromNibTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectFromNibTestViewController.swift; sourceTree = "<group>"; };
 		ADDC562128A0E57C005EA7D1 /* ObjectFromNibTestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ObjectFromNibTestViewController.xib; sourceTree = "<group>"; };
 		ADDC562428A0E5C1005EA7D1 /* TestStarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestStarView.swift; sourceTree = "<group>"; };
@@ -161,6 +175,20 @@
 				ADCC899827546F7300912771 /* ThreadTestViewController02.xib */,
 			);
 			path = "NSThread 线程保活和销毁";
+			sourceTree = "<group>";
+		};
+		ADCF49EB28E18D2800EDFF82 /* UIScrollView 嵌套 */ = {
+			isa = PBXGroup;
+			children = (
+				ADCF49F428E18EA900EDFF82 /* CustomScrollView.swift */,
+				ADCF49EC28E18DBC00EDFF82 /* MultipleViewController.swift */,
+				ADCF49ED28E18DBC00EDFF82 /* MultipleViewController.xib */,
+				ADCF49FA28E195BC00EDFF82 /* ScrollChildViewController.swift */,
+				ADCF49FB28E195BC00EDFF82 /* ScrollChildViewController.xib */,
+				ADCF49FE28E195C900EDFF82 /* TableChildViewController.swift */,
+				ADCF49FF28E195C900EDFF82 /* TableChildViewController.xib */,
+			);
+			path = "UIScrollView 嵌套";
 			sourceTree = "<group>";
 		};
 		ADDC561F28A0E517005EA7D1 /* Xib或Storyboard添加Object */ = {
@@ -281,6 +309,7 @@
 				AD6EFDF727703764007D2F4C /* 自定义 UICollectionViewFlowLayout */,
 				AD6EFDFE27705A6B007D2F4C /* 原生UICollectionView拖动动画 */,
 				ADDC561F28A0E517005EA7D1 /* Xib或Storyboard添加Object */,
+				ADCF49EB28E18D2800EDFF82 /* UIScrollView 嵌套 */,
 				EAEBAD492621B176005DE62B /* AppDelegate.swift */,
 				EAEBAD612621B3A7005DE62B /* RootTabBarController.swift */,
 				EAEBAD642621B3E6005DE62B /* HomeViewController.swift */,
@@ -353,6 +382,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADCF49FD28E195BC00EDFF82 /* ScrollChildViewController.xib in Resources */,
 				EA031CAB2629ED9D00180969 /* ModelTestViewController02.xib in Resources */,
 				ADA452E7275BA20100C15377 /* InputTestViewController.xib in Resources */,
 				EA7A6BCC262C008E00149932 /* KeychainViewController.xib in Resources */,
@@ -363,7 +393,9 @@
 				DC2412D52626B97300F42143 /* pretty.jpg in Resources */,
 				AD6EFDFB27703764007D2F4C /* FLowLayoutTestViewController.xib in Resources */,
 				AD6EFE0627705B24007D2F4C /* PanTestCollectionViewCell.xib in Resources */,
+				ADCF4A0128E195C900EDFF82 /* TableChildViewController.xib in Resources */,
 				EA031CA62629ED8F00180969 /* ModelTestViewController01.xib in Resources */,
+				ADCF49EF28E18DBC00EDFF82 /* MultipleViewController.xib in Resources */,
 				DC2412D62626B97300F42143 /* 荷塘月色.pdf in Resources */,
 				AD6EFE0227705AC0007D2F4C /* CollectionViewPanTestViewController.xib in Resources */,
 				EAEBAD532621B178005DE62B /* Assets.xcassets in Resources */,
@@ -385,11 +417,14 @@
 				ADCC899927546F7300912771 /* ThreadTestViewController02.swift in Sources */,
 				EA031C1326271AE400180969 /* PageViewController.swift in Sources */,
 				DC2412CA262690BC00F42143 /* SystemShareViewController.swift in Sources */,
+				ADCF49EE28E18DBC00EDFF82 /* MultipleViewController.swift in Sources */,
 				ADDC562528A0E5C1005EA7D1 /* TestStarView.swift in Sources */,
 				EA031C1A26271BFB00180969 /* PageViewController02.swift in Sources */,
+				ADCF4A0028E195C900EDFF82 /* TableChildViewController.swift in Sources */,
 				EA7A6BCB262C008E00149932 /* KeychainViewController.swift in Sources */,
 				EAEBAD4A2621B176005DE62B /* AppDelegate.swift in Sources */,
 				DC2AE35E26241E14005C8CC7 /* BarViewController.swift in Sources */,
+				ADCF49FC28E195BC00EDFF82 /* ScrollChildViewController.swift in Sources */,
 				EA031C1D26271C0400180969 /* PageViewController03.swift in Sources */,
 				ADDC562228A0E57C005EA7D1 /* ObjectFromNibTestViewController.swift in Sources */,
 				ADDC562928A0F15C005EA7D1 /* TestConfigModel.swift in Sources */,
@@ -408,6 +443,7 @@
 				EA031C1726271BF200180969 /* PageViewController01.swift in Sources */,
 				EA031C052625CACD00180969 /* ScrollViewHeaderViewController.swift in Sources */,
 				DC82D32E2627D26F00BC7BA2 /* SuspensionViewController.swift in Sources */,
+				ADCF49F528E18EA900EDFF82 /* CustomScrollView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
