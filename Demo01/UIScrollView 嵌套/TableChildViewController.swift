@@ -12,6 +12,8 @@ class TableChildViewController: UIViewController {
     var mainScrollView: MainScrollView!
     @IBOutlet weak var tableView: SubTableView!
     
+    @IBOutlet weak var indexLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.mainScrollView = mainScrollView
@@ -49,9 +51,9 @@ extension TableChildViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        return 4
+        return 10
     }
-
+    
     // MARK: - 核心
     
     func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
@@ -71,6 +73,14 @@ extension TableChildViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        
+        defer {
+            if let topIndexPath = tableView.indexPathForRow(at: CGPoint(x: tableView.bounds.size.width/2, y: tableView.contentOffset.y + 1)) {
+                indexLabel.text = "第\n\(topIndexPath.section+1)\n组"
+            } else if let topIndexPath = tableView.indexPathForRow(at: CGPoint(x: tableView.bounds.size.width/2, y: tableView.contentOffset.y + (1 + 10))) { // 4 为 section 间距
+                indexLabel.text = "第\n\(topIndexPath.section+1)\n组"
+            }
+        }
         
         guard let mainScrollView = self.mainScrollView else { return }
         
