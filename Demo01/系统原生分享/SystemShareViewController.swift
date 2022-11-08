@@ -46,6 +46,20 @@ class SystemShareViewController: UIViewController {
             }
         }
         self.present(activityVC, animated: true, completion: nil)
+        
+        
+        // 注意 iPad 和 iPhone 模态形式
+//        if UIDevice.current.userInterfaceIdiom == .phone {
+//            present(activityVC, animated: true, completion: nil)
+//            return
+//        }
+//        if UIDevice.current.userInterfaceIdiom == .pad {
+//            let popver = activityVC.popoverPresentationController
+//            popver?.sourceView = sender
+//            popver?.sourceRect = sender.bounds
+//            present(activityVC, animated: true, completion: nil)
+//            return
+//        }
     }
 
 }
